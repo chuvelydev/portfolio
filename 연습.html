@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/urg3zgt.css" />
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        overflow-x: hidden;
+        background: #e6e7e6;
+        font-family: "HakgyoansimWoojuR";
+
+        /*background: url(../img/blue-5136251.jpg) no-repeat;
+        width: 100%;
+        height: 100vh;*/
+      }
+      ::-webkit-scrollbar {
+        width: 15px; /* 세로축 스크롤 바 길이 */
+        height: 20px; /* 가로축 스크롤 바 길이 */
+      }
+      ::-webkit-scrollbar-button:start {
+        background-color: #eee; /* Top, Left 방향의 이동버튼 */
+      }
+      ::-webkit-scrollbar-button:end {
+        background-color: #eee; /* Bottom, Right 방향의 이동버튼 */
+      }
+      ::-webkit-scrollbar-track-piece {
+        background-color: #ccc; /*스크롤 바 배경 색상*/
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: gray; /*스크롤 바 색상*/
+      }
+      #con2 {
+        width: 100%;
+        height: 100vh;
+
+        perspective: 1000px;
+        position: relative;
+        margin: 0px auto;
+      }
+
+      #con2 > h2 {
+        font-family: "cooper-black-std", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5vw;
+        color: #585858;
+        position: absolute;
+        top: 3vw;
+        left: 5vw;
+        border-bottom: 2px solid #585858;
+      }
+      .con2_1 {
+        width: 800px;
+        height: 700px;
+        position: absolute;
+        left: 15%;
+        top: 18%;
+      }
+      .con2ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+      }
+      .computer {
+        position: absolute;
+        top: 10%;
+        width: 43vw;
+        height: 35vw;
+        /*background: url(../img/monitor.png) center center no-repeat;*/
+        overflow: hidden;
+        z-index: 66;
+        max-height: 35vw;
+      }
+      .computer img {
+        width: 100%;
+      }
+
+      .computer_1 {
+        position: absolute;
+        top: 3%;
+        left: 2.6%;
+
+        z-index: 77;
+        overflow: hidden;
+
+        width: 41vw;
+        height: 26.5vw;
+        border: 2px solid #333;
+        border-radius: 8px;
+      }
+      .computerul {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        z-index: 88;
+        width: 500%;
+        height: 28vw;
+      }
+
+      .computer li {
+        width: 100%;
+        height: 100%;
+
+        /*overflow-y: scroll; 나중에 수정하기 div하나 묶어서 이미지만 슬라이드*/
+
+        filter: saturate(90%) contrast(90%);
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .computer li img {
+        width: 100%;
+      }
+
+      .con2_2 {
+        width: 30vw;
+        height: 23vw;
+        position: absolute;
+        left: 55%;
+        top: 31%;
+        z-index: 11;
+        background: #c8c8c8;
+        border-radius: 5%;
+        overflow: hidden;
+        box-shadow: 5px 15px 15px 5px #666565;
+      }
+      .text2 {
+        display: flex;
+        width: 500%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .text2 li {
+        width: 100%;
+        margin: 2% auto;
+      }
+      .text2 h2 {
+        margin-bottom: 2vw;
+        color: #585858;
+        font-size: 1.2vw;
+      }
+      .text2 h4 {
+        margin-bottom: 0.5vw;
+        color: #585858;
+        font-size: 1vw;
+      }
+
+      .more {
+        position: absolute;
+        left: 35%;
+        bottom: 15%;
+        width: 10vw;
+        padding: 0.5vw;
+        border: 1px solid #fff;
+      }
+      .more a {
+        color: #fff;
+        font-size: 0.8vw;
+      }
+
+      .slidecon a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+      }
+      .slidecon .prev {
+        left: 15%;
+      }
+      .slidecon .next {
+        right: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="con2">
+      <ul class="con2ul">
+        <li>
+          <div class="con2_1">
+            <div class="computer">
+              <img src="img/monitor.png" />
+
+              <div class="computer_1">
+                <ul class="computerul">
+                  <li>
+                    <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/484e9e564ee135ffe842381e3a6f98a8.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/5d66f302420bd0f498dc598916d006bf.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/99a94fd7a29e2a5dfd8be6ae0e476ce0.jpg" />
+                  </li>
+                  <li>
+                    <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="con2_2">
+            <div class="con2_22">
+              <ul class="text2">
+                <li>
+                  <h2>소노(sono)</h2>
+                  <h4>작업: HTML/CSS/JavaScript</h4>
+                  <h4>참여도: 개인작업100%</h4>
+                  <h4>반응형: PC/태블릿/모바일</h4>
+                  <div class="more">
+                    <a href="#1">사이트 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <h2>두번째</h2>
+                  <h4>HTML/CSS/JavaScript</h4>
+                  <h4>개인작업100%</h4>
+                  <h4>반응형: PC/태블릿/모바일</h4>
+                  <div class="more">
+                    <a href="#1">사이트 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <h2>세번째</h2>
+                  <h4>HTML/CSS/JavaScript</h4>
+                  <h4>개인작업100%</h4>
+                  <h4>반응형: PC/태블릿/모바일</h4>
+                  <div class="more">
+                    <a href="#1">사이트 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <h2>네번째</h2>
+                  <h4>HTML/CSS/JavaScript</h4>
+                  <h4>개인작업100%</h4>
+                  <h4>반응형: PC/태블릿/모바일</h4>
+                  <div class="more">
+                    <a href="#1">사이트 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <h2>소노(sono)</h2>
+                  <h4>작업: HTML/CSS/JavaScript</h4>
+                  <h4>참여도: 개인작업100%</h4>
+                  <h4>반응형: PC/태블릿/모바일</h4>
+                  <div class="more">
+                    <a href="#1">사이트 바로가기</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="slidecon">
+                <a href="#1" class="prev"
+                  ><span class="material-symbols-outlined">
+                    arrow_back_ios
+                  </span></a
+                >
+                <a href="#1" class="next"
+                  ><span class="material-symbols-outlined">
+                    arrow_forward_ios
+                  </span></a
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
