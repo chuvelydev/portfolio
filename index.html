@@ -372,7 +372,74 @@
           </li>
         </ul>
       </div>
-      <div id="con3"></div>
+      <div id="con3">
+        <h2>GALLERY<span class="ogc1"></span></h2>
+
+        <h4>이미지를 클릭하세요!</h4>
+        <div class="con3_1">
+          <div class="con3_large">
+            <ul class="large">
+              <li>
+                <img src="img/1046c9ef86f44db2e54930ff6e322362.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+              <li>
+                <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+              <li>
+                <img src="img/5553922f78725fbf906426575dad86b0.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+              <li>
+                <img src="img/1046c9ef86f44db2e54930ff6e322362.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+              <li>
+                <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+              <li>
+                <img src="img/5553922f78725fbf906426575dad86b0.jpg" />
+                <a href="#1" class="close"><img src="img/close.png" /></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="small">
+            <li>
+              <div class="big">
+                <img src="img/1046c9ef86f44db2e54930ff6e322362.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="big">
+                <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="big">
+                <img src="img/5553922f78725fbf906426575dad86b0.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="big">
+                <img src="img/1046c9ef86f44db2e54930ff6e322362.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="big">
+                <img src="img/3c29b143dc2317c61c9a3d30071c7bf9.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="big">
+                <img src="img/5553922f78725fbf906426575dad86b0.jpg" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div id="con4"></div>
     </div>
     <script>
@@ -535,6 +602,18 @@
       });
       contact.addEventListener("click", function () {
         window.scrollTo({ top: 3300, behavior: "smooth" });
+      });
+      $(".small li").on("click", function () {
+        let i = $(this).index();
+        $(".large li").eq(i).css({ display: "block" });
+        $(".large li").hide();
+        $(".con3_1 a").css({ display: "block" });
+        $(".large li").eq(i).show();
+      });
+
+      $(".con3_1 a").on("click", function () {
+        $(".large li").hide();
+        $(".con3_1 a").css({ display: "none" });
       });
     </script>
   </body>
