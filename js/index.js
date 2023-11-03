@@ -4,8 +4,8 @@
 
 $(function () {
   let i = 0;
-  let total = $(".text2 li").length;
-
+  let total = $(".text2 > li").length;
+  // console.log(total);
   function start() {
     i++;
 
