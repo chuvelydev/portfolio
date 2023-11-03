@@ -215,11 +215,13 @@ $(document).ready(function () {
       $(".con3_1").addClass("on");
       $("#con3 > h4").addClass("on");
     }
-    /*
-    if (a >= 3100) {
-      $(".con5_2 ul").addClass("on");
+
+    if (a >= 3150) {
+      $("#con4 h2").addClass("on");
+      $("#con4 .bottom").addClass("on");
+      $("#con4 h3").addClass("on");
+      $("#con4 h4").addClass("on");
     }
-  */
   });
 
   /*풀스크린*/

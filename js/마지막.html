@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #e6e7e6;
+      }
+      #con4 {
+        width: 100%;
+        height: 100vh;
+
+        position: relative;
+        overflow: hidden;
+      }
+      #con4 h2 {
+        font-family: "cooper-black-std", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5vw;
+        color: #585858;
+
+        border-bottom: 2px solid #585858;
+        text-align: center;
+        z-index: 88;
+      }
+
+      .ogc1 {
+        display: inline-block;
+        margin-left: 3px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #585858;
+        vertical-align: -5px;
+      }
+      #con4 h3 {
+        text-align: center;
+        font-size: 1.2vw;
+        padding-top: 3vw;
+        z-index: 88;
+      }
+      #con4 h4 {
+        padding-top: 0.5vw;
+        text-align: center;
+        font-size: 1.5vw;
+        z-index: 88;
+      }
+      .con4_box {
+        width: 30%;
+        height: 18vw;
+        border-radius: 2vw;
+        margin: 0px auto;
+
+        z-index: 88;
+      }
+      .circle_1 {
+        position: absolute;
+        top: 50%;
+        left: -1%;
+        background: #d7e0e0;
+        width: 23vw;
+        height: 23vw;
+        border-radius: 50%;
+
+        animation: bounce 2s infinite ease-in-out alternate;
+        z-index: -1;
+      }
+
+      .circle_2 {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        background: #e7e1e0;
+        z-index: -1;
+
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+
+        animation: bounce 2s infinite ease-in-out alternate;
+      }
+
+      .circle_3 {
+        position: absolute;
+        top: -2%;
+        left: 85%;
+        background: #dadbda;
+        z-index: 0;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        z-index: -1;
+        animation: bounce 2s infinite ease-in-out alternate;
+      }
+
+      .circle_4 {
+        position: absolute;
+        bottom: 1%;
+        left: 70%;
+        background: #e2dedf;
+
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        z-index: -1;
+        animation: bounce 2s infinite ease-in-out alternate;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translate(-7px, -15px);
+        }
+
+        100% {
+          transform: translate(5px, 50px);
+        }
+      }
+      #footer {
+        width: 100%;
+        height: 10vw;
+        background: #222;
+        position: absolute;
+        bottom: 0;
+      }
+      #footer p {
+        text-align: center;
+        color: #fff;
+        margin: 5vw auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="con4">
+      <div class="circle_1"></div>
+      <div class="circle_2"></div>
+      <div class="circle_3"></div>
+      <div class="circle_4"></div>
+      <h2>CONTACT<span class="ogc1"></span></h2>
+
+      <div class="con4_box">
+        <h3>
+          "새로운 웹 기술 및 도구에 대한 학습과<br />
+          지속적인 업무 개선을 추구하겠습니다"
+        </h3>
+        <h4>kjuhyg@naver.com</h4>
+        <h4>010-6419-8654</h4>
+      </div>
+      <div id="footer">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로
+          제작되었습니다.<br />
+          © 2023 Cheon, Ju-Hye. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
