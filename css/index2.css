@@ -238,7 +238,7 @@ a {
   position: fixed;
   display: block;
   animation: up 0.5s forwards;
-  transition: 3s;
+  transition: 2s;
 }
 
 .fro2_text2 {
