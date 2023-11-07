@@ -2,6 +2,9 @@ $(document).ready(function () {
   window.addEventListener("scroll", function () {
     let a = window.scrollY;
     console.log(a);
+    if (a >= 0) {
+      $("#fro1 h3").css({ display: "block" });
+    }
     if (a >= 290) {
       $("#fro1 h3").css({ display: "block" });
       $(".fro2_text").css({ display: "none" });

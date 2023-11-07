@@ -78,6 +78,15 @@ a {
     opacity: 1;
   }
 }
+@keyframes left {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 /*프로필1*/
 #frofile {
   width: 100%;
@@ -93,7 +102,7 @@ a {
   opacity: 0;
   top: 5vw;
   left: 5vw;
-  animation: up 1s 0.5s ease-out forwards;
+  animation: left 1s 0.5s ease-out forwards;
   z-index: 2;
 }
 #fro1 h2:nth-of-type(2) {
@@ -101,7 +110,7 @@ a {
   opacity: 0;
   top: 10vw;
   left: 5vw;
-  animation: up 1s 1s ease-out forwards;
+  animation: left 1s 1s ease-out forwards;
   z-index: 2;
 }
 
