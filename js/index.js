@@ -216,7 +216,7 @@ $(document).ready(function () {
       $("#con3 > h4").addClass("on");
     }
 
-    if (a >= 310) {
+    if (a >= 3100) {
       $("#con4 h2").addClass("on");
       $("#con4 .bottom").addClass("on");
       $("#con4 h3").addClass("on");
