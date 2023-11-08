@@ -28,8 +28,9 @@ $(document).ready(function () {
     if (a >= 1800) {
       $(".fro2_3").addClass("on");
       $(".fro2_text").css({ display: "block" });
+      $(".fro3_box").removeClass("on");
     }
-    if (a >= 2400) {
+    if (a >= 2800) {
       $(".fro2_text").css({ display: "none" });
       $(".fro3_box").addClass("on");
       $(".fro2_3").removeClass("on");

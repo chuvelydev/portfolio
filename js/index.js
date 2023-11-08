@@ -2,7 +2,6 @@
 /*스킬*/
 /*스킬*/
 
-
 $(document).ready(function () {
   $(".card_1").on("mouseenter", function () {
     $(".card_1 .cardBox").addClass("on");
@@ -52,6 +51,32 @@ $(document).ready(function () {
   $(".card_8").on("mouseleave", function () {
     $(".card_8 .cardBox").removeClass("on");
   });
+
+  $(".card_9").on("mouseenter", function () {
+    $(".card_9 .cardBox").addClass("on");
+  });
+  $(".card_9").on("mouseleave", function () {
+    $(".card_9 .cardBox").removeClass("on");
+  });
+  $(".card_10").on("mouseenter", function () {
+    $(".card_10 .cardBox").addClass("on");
+  });
+  $(".card_10").on("mouseleave", function () {
+    $(".card_10 .cardBox").removeClass("on");
+  });
+  $(".card_11").on("mouseenter", function () {
+    $(".card_11 .cardBox").addClass("on");
+  });
+  $(".card_11").on("mouseleave", function () {
+    $(".card_11 .cardBox").removeClass("on");
+  });
+  $(".card_12").on("mouseenter", function () {
+    $(".card_12 .cardBox").addClass("on");
+  });
+  $(".card_12").on("mouseleave", function () {
+    $(".card_12 .cardBox").removeClass("on");
+  });
+
   /*메뉴*/
   /*메뉴*/
   /*메뉴*/
