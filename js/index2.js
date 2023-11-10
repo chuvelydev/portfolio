@@ -14,26 +14,45 @@ $(document).ready(function () {
       $(".fro2_text").css({ display: "none" });
     }
     if (a >= 700) {
-      $(".fro2_1").removeClass("on");
+      $(".fro2_1 .fro2_box1 h2").removeClass("on");
+      $(".fro2_1 .fro2_box1 p").removeClass("on");
+      $(".fro2_1 .fro2_box2").removeClass("on");
     }
     if (a >= 800) {
-      $(".fro2_1").addClass("on");
+      $(".fro2_1 .fro2_box1 h2").addClass("on");
+      $(".fro2_1 .fro2_box1 p").addClass("on");
+      $(".fro2_1 .fro2_box2").addClass("on");
       $(".fro2_text").addClass("on");
       $(".fro2_text").css({ display: "block" });
     }
     if (a >= 1100) {
-      $(".fro2_2").addClass("on");
+      $(".fro2_2 .fro2_box1 h2").addClass("on");
+      $(".fro2_2 .fro2_box1 p").addClass("on");
+      $(".fro2_2 .fro2_box2").addClass("on");
+      $(".fro2_text").css({ display: "block" });
+    }
+    if (a >= 1600) {
       $(".fro2_text").css({ display: "block" });
     }
     if (a >= 1800) {
-      $(".fro2_3").addClass("on");
-      $(".fro2_text").css({ display: "block" });
+      $(".fro2_3 .fro2_box1 h2").addClass("on");
+      $(".fro2_3 .fro2_box1 p").addClass("on");
+      $(".fro2_3 .fro2_box2").addClass("on");
       $(".fro3_box").removeClass("on");
+      $(".fro2_text").css({ display: "block" });
     }
-    if (a >= 2800) {
+    if (a >= 2500) {
+      $(".fro3_box h2").removeClass("on");
+      $(" .fro3_box p").removeClass("on");
+    }
+    if (a >= 2700) {
       $(".fro2_text").css({ display: "none" });
-      $(".fro3_box").addClass("on");
+      $(".fro3_box h2").addClass("on");
+      $(" .fro3_box p").addClass("on");
       $(".fro2_3").removeClass("on");
+      $(".fro2_3 .fro2_box1 h2").removeClass("on");
+      $(".fro2_3 .fro2_box1 p").removeClass("on");
+      $(".fro2_3 .fro2_box2").removeClass("on");
     }
   });
 });
