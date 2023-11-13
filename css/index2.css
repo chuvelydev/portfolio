@@ -891,3 +891,816 @@ a {
     color: #fff;
   }
 }
+
+/*모바일*/
+/*모바일*/
+/*모바일*/
+
+@media (min-width: 500px) and (max-width: 767px) {
+  /*프로필1*/
+  #frofile {
+    width: 100%;
+    position: relative;
+  }
+  #fro1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #fro1 h2:nth-of-type(1) {
+    position: absolute;
+    opacity: 0;
+    top: 15vw;
+    left: 5vw;
+    animation: left 1s 0.5s ease-out forwards;
+    z-index: 2;
+    width: 90%;
+  }
+  #fro1 h2:nth-of-type(1) img {
+    width: 100%;
+  }
+  #fro1 h2:nth-of-type(2) {
+    position: absolute;
+    opacity: 0;
+    top: 30vw;
+    left: 5vw;
+    animation: left 1s 1s ease-out forwards;
+    z-index: 2;
+    width: 70%;
+  }
+  #fro1 h2:nth-of-type(2) img {
+    width: 100%;
+  }
+
+  #fro1 h4:nth-of-type(1) {
+    position: absolute;
+    top: 65vw;
+    right: 5vw;
+    font-size: 4vw;
+    z-index: 2;
+    color: #585858;
+    animation: up 1s 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  #fro1 h4:nth-of-type(2) {
+    position: absolute;
+    top: 70vw;
+    right: 5vw;
+    font-size: 4vw;
+    color: #585858;
+    z-index: 2;
+    animation: up 1s 1.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  #fro1 h3 {
+    color: #585858;
+    font-size: 5vw;
+    min-width: 11px;
+    white-space: nowrap;
+    margin: 0;
+    color: transparent;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 88;
+  }
+
+  #fro1 h3::before {
+    content: "신입 웹퍼블리셔를 지원하는 지원자 천주혜 입니다.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #585858;
+    overflow: hidden;
+    border-right: 1px solid #585858;
+    animation: typing 3s 2.2s steps(31) forwards;
+    opacity: 0;
+  }
+  .circle_1 {
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    background: #d7e0e0;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    z-index: 1;
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_2 {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background: #e7e1e0;
+    z-index: 1;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_3 {
+    position: absolute;
+    top: -2%;
+    left: 85%;
+    background: #dadbda;
+    z-index: 0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    z-index: 1;
+    z-index: -1;
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_4 {
+    position: absolute;
+    bottom: 20%;
+    left: 70%;
+    background: #e2dedf;
+    z-index: 1;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+  /*프로필*/
+
+  #fro2 {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+  }
+  .fro2_text {
+    width: 50%;
+    height: 100vh;
+    background: #c0c4c5;
+    text-align: center;
+    padding: 2vw;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+  }
+  .name {
+    padding-top: 40vw;
+  }
+  .name h2 {
+    font-size: 3.5vw;
+    margin-bottom: 0.8vw;
+  }
+  .name h2:nth-of-type(3) {
+    margin-bottom: 2.2vw;
+  }
+  .name h3 {
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .fro2_text.on {
+    position: fixed;
+    display: block;
+    animation: up 0.5s forwards;
+    transition: 2s;
+  }
+
+  .fro2_text2 {
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+  .fro2_1 {
+    width: 100%;
+    padding-top: 18vw;
+  }
+
+  .fro2_1 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0vw;
+    top: 15vw;
+    padding: 3vw;
+  }
+  .fro2_1 .fro2_box1 h2 {
+    font-size: 5vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box1 h2.on {
+    animation: left 1.5s forwards;
+  }
+  .fro2_1 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 2vw;
+    font-size: 3vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_1 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    top: 60vw;
+    left: 0;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+  .fro2_box2 img {
+    width: 100%;
+  }
+
+  .fro2_2 {
+    padding-top: 8vw;
+    width: 100%;
+  }
+
+  .fro2_2 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0vw;
+    top: 110vw;
+    padding: 3vw;
+  }
+
+  .fro2_2 .fro2_box1 h2 {
+    font-size: 5vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box1 h2.on {
+    animation: right 1.5s forwards;
+  }
+  .fro2_2 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 2vw;
+    font-size: 3vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_2 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 155vw;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+
+  .fro2_3 {
+    padding-top: 15vw;
+    width: 100%;
+  }
+
+  .fro2_3 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0;
+    top: 210vw;
+    padding: 3vw;
+  }
+
+  .fro2_3 .fro2_box1 h2 {
+    font-size: 5vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box1 h2.on {
+    animation: left 1s forwards;
+  }
+  .fro2_3 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 2vw;
+    font-size: 3vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_3 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 263vw;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box2 img {
+    width: 100%;
+  }
+  .fro2_3 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+
+  /*프로필4*/
+
+  #fro3 {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .fro3_box {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 0%;
+    height: 25vw;
+    margin: 5vw auto;
+  }
+  .fro3_text {
+    padding: 3vw;
+  }
+  .fro3_box h2 {
+    padding-top: 4vw;
+    font-size: 5vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro3_box h2.on {
+    animation: up 1s forwards;
+  }
+  .fro3_box p {
+    padding-top: 4vw;
+    font-size: 3.5vw;
+    color: #585858;
+    text-align: left;
+    line-height: 4.5vw;
+    opacity: 0;
+  }
+  .fro3_box p.on {
+    animation: up 1s 1s forwards;
+  }
+
+  .footer {
+    z-index: 9999;
+    background: #d9dfdf;
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 3.5vw;
+    padding-top: 10vw;
+    color: #585858;
+    animation: animate1 2s 2s infinite;
+  }
+  .footer .box {
+    width: 20%;
+    height: 6vw;
+    border: 1px solid #585858;
+    margin: 5vw auto;
+  }
+  .footer .box a {
+    color: #585858;
+    height: 6vw;
+    line-height: 6vw;
+    font-weight: 500;
+    font-size: 2.5vw;
+  }
+  .footer .box:hover {
+    background: #333;
+    border: 1px solid #333;
+  }
+  .footer .box:hover a {
+    color: #fff;
+  }
+}
+
+/*모바일2*/
+/*모바일2*/
+/*모바일2*/
+
+@media (max-width: 499px) {
+  /*프로필1*/
+  #frofile {
+    width: 100%;
+    position: relative;
+  }
+  #fro1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #fro1 h2:nth-of-type(1) {
+    position: absolute;
+    opacity: 0;
+    top: 15vw;
+    left: 5vw;
+    animation: left 1s 0.5s ease-out forwards;
+    z-index: 2;
+    width: 90%;
+  }
+  #fro1 h2:nth-of-type(1) img {
+    width: 100%;
+  }
+  #fro1 h2:nth-of-type(2) {
+    position: absolute;
+    opacity: 0;
+    top: 30vw;
+    left: 5vw;
+    animation: left 1s 1s ease-out forwards;
+    z-index: 2;
+    width: 70%;
+  }
+  #fro1 h2:nth-of-type(2) img {
+    width: 100%;
+  }
+
+  #fro1 h4:nth-of-type(1) {
+    position: absolute;
+    top: 70vw;
+    right: 5vw;
+    font-size: 5vw;
+    z-index: 2;
+    color: #585858;
+    animation: up 1s 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  #fro1 h4:nth-of-type(2) {
+    position: absolute;
+    top: 80vw;
+    right: 5vw;
+    font-size: 5vw;
+    color: #585858;
+    z-index: 2;
+    animation: up 1s 1.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  #fro1 h3 {
+    color: #585858;
+    font-size: 5vw;
+    min-width: 11px;
+    white-space: nowrap;
+    margin: 0;
+    color: transparent;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 88;
+  }
+
+  #fro1 h3::before {
+    content: "신입 웹퍼블리셔를 지원하는 지원자 천주혜 입니다.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #585858;
+    overflow: hidden;
+    border-right: 1px solid #585858;
+    animation: typing 3s 2.2s steps(31) forwards;
+    opacity: 0;
+  }
+  .circle_1 {
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    background: #d7e0e0;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    z-index: 1;
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_2 {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background: #e7e1e0;
+    z-index: 1;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_3 {
+    position: absolute;
+    top: -2%;
+    left: 85%;
+    background: #dadbda;
+    z-index: 0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    z-index: 1;
+    z-index: -1;
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+
+  .circle_4 {
+    position: absolute;
+    bottom: 30%;
+    left: 70%;
+    background: #e2dedf;
+    z-index: 1;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    animation: bounce 2s infinite ease-in-out alternate;
+  }
+  /*프로필*/
+
+  #fro2 {
+    width: 100%;
+    height: 250vh;
+    position: relative;
+  }
+  .fro2_text {
+    width: 50%;
+    height: 100vh;
+    background: #c0c4c5;
+    text-align: center;
+    padding: 2vw;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+  }
+  .name {
+    padding-top: 80vw;
+  }
+  .name h2 {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+  .name h2:nth-of-type(3) {
+    margin-bottom: 2.2vw;
+  }
+  .name h3 {
+    font-size: 3vw;
+    margin-bottom: 1.8vw;
+  }
+  .name img {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .fro2_text.on {
+    position: fixed;
+    display: block;
+    animation: up 0.5s forwards;
+    transition: 2s;
+  }
+
+  .fro2_text2 {
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+
+  .fro2_1 {
+    width: 100%;
+    padding-top: 18vw;
+  }
+
+  .fro2_1 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0vw;
+    top: 15vw;
+    padding: 3vw;
+  }
+  .fro2_1 .fro2_box1 h2 {
+    font-size: 6vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box1 h2.on {
+    animation: left 1.5s forwards;
+  }
+  .fro2_1 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 3vw;
+    font-size: 4vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_1 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    top: 80vw;
+    left: 0;
+    opacity: 0;
+  }
+  .fro2_1 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+  .fro2_box2 img {
+    width: 100%;
+  }
+
+  .fro2_2 {
+    padding-top: 8vw;
+    width: 100%;
+  }
+
+  .fro2_2 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0vw;
+    top: 140vw;
+    padding: 3vw;
+  }
+
+  .fro2_2 .fro2_box1 h2 {
+    font-size: 6vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box1 h2.on {
+    animation: right 1.5s forwards;
+  }
+  .fro2_2 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 3vw;
+    font-size: 4vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_2 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 195vw;
+    opacity: 0;
+  }
+  .fro2_2 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+
+  .fro2_3 {
+    padding-top: 15vw;
+    width: 100%;
+  }
+
+  .fro2_3 .fro2_box1 {
+    width: 100%;
+    height: 20vw;
+    border-radius: 2vw;
+    position: absolute;
+    left: 0;
+    top: 250vw;
+    padding: 3vw;
+  }
+
+  .fro2_3 .fro2_box1 h2 {
+    font-size: 6vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box1 h2.on {
+    animation: left 1s forwards;
+  }
+  .fro2_3 .fro2_box1 p {
+    width: 100%;
+    text-align: left;
+    padding-top: 3vw;
+    font-size: 4vw;
+    color: #585858;
+    line-height: 4vw;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box1 p.on {
+    animation: up 1s 0.5s forwards;
+  }
+  .fro2_3 .fro2_box2 {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 323vw;
+    opacity: 0;
+  }
+  .fro2_3 .fro2_box2 img {
+    width: 100%;
+  }
+  .fro2_3 .fro2_box2.on {
+    animation: up 1s 1s forwards;
+  }
+
+  /*프로필4*/
+
+  #fro3 {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .fro3_box {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 0%;
+    height: 25vw;
+    margin: 5vw auto;
+  }
+  .fro3_text {
+    padding: 3vw;
+  }
+  .fro3_box h2 {
+    padding-top: 4vw;
+    font-size: 6vw;
+    color: #585858;
+    opacity: 0;
+  }
+  .fro3_box h2.on {
+    animation: up 1s forwards;
+  }
+  .fro3_box p {
+    padding-top: 4vw;
+    font-size: 4vw;
+    color: #585858;
+    text-align: left;
+    line-height: 4.5vw;
+    opacity: 0;
+  }
+  .fro3_box p.on {
+    animation: up 1s 1s forwards;
+  }
+
+  .footer {
+    z-index: 9999;
+    background: #d9dfdf;
+    width: 100%;
+    height: 60vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 4vw;
+    padding-top: 20vw;
+    color: #585858;
+    animation: animate1 2s 2s infinite;
+  }
+  .footer .box {
+    width: 25%;
+    height: 7vw;
+    border: 1px solid #585858;
+    margin: 8vw auto;
+  }
+  .footer .box a {
+    color: #585858;
+    height: 7vw;
+    line-height: 7vw;
+    font-weight: 500;
+    font-size: 3vw;
+  }
+  .footer .box:hover {
+    background: #333;
+    border: 1px solid #333;
+  }
+  .footer .box:hover a {
+    color: #fff;
+  }
+}
